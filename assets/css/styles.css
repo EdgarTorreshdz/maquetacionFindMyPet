@@ -37,6 +37,10 @@ header {
     color: #fff;
 }
 
+header {
+    position: fixed;
+}
+
 header nav {
     display: block;
     width: 70%;
@@ -62,13 +66,15 @@ header nav ul {
     overflow: hidden;
     list-style: none;
     height: 100px;
-    width: 70%;
+    width: 60%;
+    margin-left: 10%;
     float: left;
 }
 
 #perfil {
     width: 30%;
     float: right;
+    margin-left: 0%;
 }
 
 header nav ul li {
@@ -102,9 +108,46 @@ section {
     display: none;
 }
 
+#contenido {
+    padding-top: 100px;
+    width: 100%;
+    min-height: 950px;
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #353535;
+    color: #B0B0B0;
+    padding-top: 20px;
+}
+
+#copyright {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+
+#desarrolladores {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+#redes {
+    width: 30%;
+    float: left;
+}
+
+.link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
 @media screen and (max-width:1367px) {
     #logo {
-        width: 100%;
+        width: 60%;
         padding-left: 40%;
     }
     header nav {
@@ -117,6 +160,9 @@ section {
     #perfil {
         width: 25%;
         float: right;
+    }
+    #contenido {
+        padding-top: 200px;
     }
 }
 
@@ -196,5 +242,32 @@ section {
     .menu_bar span {
         float: right;
         font-size: 40px;
+    }
+    #contenido {
+        padding-top: 100px;
+    }
+    footer {
+        height: 80px;
+        padding-top: 0px;
+    }
+    #copyDes {
+        width: 100%;
+        padding-top: 10px;
+        height: 40px;
+    }
+    #copyright {
+        width: 40%;
+    }
+    #desarrolladores {
+        width: 60%;
+    }
+    #redes {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .link {
+        padding-right: .5rem;
+        padding-left: .5rem;
     }
 }
