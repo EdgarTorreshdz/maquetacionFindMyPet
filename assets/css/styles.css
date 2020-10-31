@@ -9,42 +9,32 @@ body {
 
 header {
     width: 100%;
-}
-
-#logo {
-    padding-left: 10%;
-    width: 30%;
-    font-size: 30px;
-    float: left;
-    height: 100px;
-    background: #2aacdd;
-}
-
-#logo img {
-    display: block;
-    float: left;
-    height: 60px;
-    margin-top: 20px;
-    animation: latir infinite 5s linear;
-}
-
-#brand {
-    display: block;
-    float: left;
-    height: 60px;
-    margin-top: 30px;
-    margin-left: 5px;
-    color: #fff;
-}
-
-header {
     position: fixed;
     z-index: 1030;
 }
+#tituloDiv{
+    width: 100%;
+    height: 150px;
+    background: #2aacdd;
+    display: flex;
+}
+#imgLogoDiv{
+    width: 10%;
+
+    margin: auto auto;
+    padding-top: 20px;
+    display: flex;
+}
+#imgLogoDiv img{
+    
+    height: 200px;
+    margin: 0 auto;
+}
+
 
 header nav {
     display: block;
-    width: 70%;
+    width: 100%;
     float: right;
     height: 100px;
     background: #2aacdd;
@@ -67,15 +57,16 @@ header nav ul {
     overflow: hidden;
     list-style: none;
     height: 100px;
-    width: 60%;
-    margin-left: 10%;
     float: left;
+    margin-left: 10%;
+    width: 35%;
 }
 
 #perfil {
-    width: 30%;
     float: right;
-    margin-left: 0%;
+    margin-left: 10%;
+    width: 25%;
+    float: right;
 }
 
 header nav ul li {
@@ -110,9 +101,9 @@ section {
 }
 
 #contenido {
-    padding-top: 100px;
+    padding-top: 250px;
     width: 100%;
-    min-height: 950px;
+    min-height: 1150px;
     background: linear-gradient(74deg, #f5f3ee, #ebe3d1);
     background-size: auto;
     background-size: 400% 400%;
@@ -123,83 +114,42 @@ section {
     width: 100%;
 }
 
-#contenidoCartas {
-    padding-top: 100px;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    min-height: 950px;
-    background-image: url("../images/fondos/caminoPatitas.svg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.contenedorCardMascota {
-    width: 30%;
-    float: left;
-    height: 600px;
-    margin-left: 2%;
-    margin-top: 20px;
-    border-radius: 5%;
-    text-align: center;
-    background-color: #e4d9c0;
-}
-
-.contenedorCardMascota img {
-    width: 100%;
-    height: 400px;
-    border-radius: 5% 5% 0% 0%;
-}
-
-.contenedorCardMascota p {
-    font-size: 30px;
-}
-
-.descripcionCardMascota {
-    width: 100%;
-    height: 200px;
-}
 
 .clearfix {
     clear: both;
     margin: 0px auto;
 }
 
-.contenedorCardMascota {
-    height: auto;
-    overflow: hidden;
-}
-
-.descripcionCardMascota {
-    height: auto;
-    overflow: hidden;
-}
-
-.descripcionCardMascota p {
-    font-size: 20px;
-}
-
 .imgCarousel {
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-size: cover;
     background-position: center;
 }
 
-#caminando {
-    width: 20%;
-    transition: all .2s ease-in-out;
-    animation-duration: 7s;
-    animation-name: slidein;
-}
+@media(max-width: 1725px) {
 
-@media(max-width: 1400px) {
-    #contenidoCartas {
-        padding-left: 5%;
-        padding-right: 5%;
+    header nav ul {
+
+        margin-left: 5%;
+        width: 65%;
+    }
+    
+    #perfil {
+        margin-left: 5%;
+        width: 25%;
+    }
+    #perfil ul{
+
+        float: right;
+    }
+    #imgLogoDiv img{
+        
+        height: 100px;
+
     }
 }
+
 
 
 /**/
@@ -260,32 +210,9 @@ footer {
     padding-left: .5rem;
 }
 
-@media screen and (max-width:1430px) {
-    #logo {
-        width: 100%;
-        padding-left: 40%;
-    }
-    header nav {
-        width: 100%;
-    }
-    header nav ul {
-        margin-left: 5%;
-        width: 65%;
-    }
-    #perfil {
-        width: 25%;
-        float: right;
-    }
-    #contenido {
-        padding-top: 200px;
-    }
-    .imgCarousel {
-        height: 500px;
-    }
-}
 
 @media screen and (max-width:980px) {
-    #logo {
+    #tituloDiv {
         display: none;
     }
     #contSubLogo {
@@ -331,15 +258,15 @@ footer {
     .menu_bar img {
         display: block;
         float: left;
-        height: 60px;
+        height: 100px;
         animation: latir infinite 5s linear;
     }
     .menu_bar .bt-menu {
         display: block;
-        padding-top: 20px;
+        padding-top: 23px;
         padding-left: 20px;
         padding-right: 20px;
-        height: 100px;
+        height: 150px;
         background: #2aacdd;
         color: #fff;
         text-decoration: none;
@@ -348,14 +275,6 @@ footer {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-    }
-    #imgTexto {
-        display: block;
-        float: left;
-        font-size: 30px;
-        margin-top: 10px;
-        margin-left: 4px;
-        color: #fff;
     }
     .menu_bar span {
         float: right;
@@ -407,21 +326,14 @@ footer {
 }
 
 @media screen and (max-width:650px) {
-    .contenedorCardMascota {
-        width: 95%;
-        height: auto;
-        margin-left: 2%;
-        overflow: hidden;
-    }
+    
     .imgCarousel {
         height: 300px;
     }
 }
 
 @media screen and (max-width:360px) {
-    header nav {
-        width: 100%;
-    }
+
     .imgCarousel {
         height: 200px;
     }
